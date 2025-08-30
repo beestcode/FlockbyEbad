@@ -4,7 +4,16 @@
 
 @import url("sections/hero.css");
 
-
+:root {
+    --dark-hover: #2b2214;
+    --white-color: #ffffffb9;
+    --white-hover: #ffffffb9;
+    --orange-color: #ffa617bf;
+    --orange-hover: #ffa617;
+    --dark-color: #2b2214b4;
+    --light-orange: #78613d9c;
+    --font-family: 'Anton', sans-serif;
+}
 
 * {
     margin: 0;
