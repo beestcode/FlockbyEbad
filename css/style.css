@@ -1,0 +1,26 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+
+@import url("sections/hero.css");
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Anton', sans-serif;
+}
+
+html,body {
+    height: 100%;
+    width: 100%;
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
