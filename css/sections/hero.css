@@ -172,22 +172,25 @@ span.n:hover {
 
 }
 
-@media (max-width: 1440px) {
+@media (max-width: 1350px) {
 
     .navbar{
-        margin-top: 120px;
+        margin-top: 40px;
     }
     .navbar h1 {
-        font-size: 40vh;
-    }
-    span.n{
         font-size: 50vh;
     }
+    span.n{
+        font-size: 60vh;
+    }
     .menu a {
-        font-size: 5rem;
+        font-size: 3.5rem;
     }
     .order a {
-        font-size: 10vh;
+        font-size: 9.5vh;
+    }
+    .order{
+        bottom: 9vh;
     }
 }
 
