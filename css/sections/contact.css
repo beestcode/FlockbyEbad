@@ -1,0 +1,118 @@
+/* Contact Section */
+.contact {
+    /* padding: 80px 0; */
+    background: var(--white-hover);
+}
+
+.contact-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* max-width: 1100px; */
+    /* margin: auto; */
+    /* gap: 50px; */
+    background-color: #FCA500;
+}
+.contact-image {
+  flex: 1.2;
+}
+
+.contact-image img {
+  width: 100%;
+  /* border-radius: 10px; */
+  /* object-fit: cover; */
+}
+
+.contact-content {
+  flex: 1;
+  padding: 50px;
+    text-align: center;
+}
+
+.contact-content h2 {
+  font-size: 8rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin-bottom: 35px;
+  color: var(--heading);
+  line-height: 130px;
+}
+
+.contact-content p {
+  margin-bottom: 20px;
+  color: var(--heading);
+  font-size: 1.1rem;
+
+}
+
+.contact-form {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 5px;
+}
+
+.contact-form input{
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 100px;
+  font-size: 1rem;
+    width: 250px;
+    height: 80px;
+    /* outline: none; */
+    text-align: center;
+    color: var(--heading);
+}
+
+.contact-form button {
+  padding: 12px;
+  background: #fe4c3c;
+  color: #fff;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: 0.3s;
+}
+
+.contact-form button:hover {
+  /* background: #ff5d4fa6; */
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    background: #fe4c3c;
+}
+.contact-form button:active {
+    transform: scale(0.95);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+    .contact-container {
+        flex-direction: column;
+        /* padding: 20px; */
+    }
+
+    .contact-image, .contact-content {
+        flex: none;
+        width: 100%;
+    }
+
+    .contact-content h2 {
+        font-size: 4rem;
+        line-height: 1.2;
+    }
+
+    .contact-form input {
+        width: 100%;
+        max-width: 300px;
+    }
+}
+
