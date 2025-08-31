@@ -238,7 +238,7 @@ span.n:hover {
 @media (max-width: 1024px) {
 
     .hero{
-        background-image: url("/assets/hero-tablet.jpg");
+        background-image: url("hero-tablet.jpg");
     }
     .navbar{
         margin-top: 120px;
@@ -297,7 +297,7 @@ span.n:hover {
 
 @media (max-width: 600px) {
     .hero{
-        background-image: url("/assets/hero-mobile.jpg");
+        background-image: url("hero-mobile.jpg");
     }
     .navbar{
         margin-top: 20px;
