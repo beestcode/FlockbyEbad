@@ -4,15 +4,16 @@
     <meta charset="UTF-12">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>FlockbyEbad</title>
 </head>
 <body>
     <section class="hero" id="hero">
         <div class="navbar">
-            <h1><span class="fries">FRIES</span> <span class="n">N</span> <span class="ice">ICE</span></h1>
+            <h1 data-aos="fade-down"><span class="fries">FRIES</span> <span class="n">N</span> <span class="ice">ICE</span></h1>
             <button class="menu-btn" onclick="toggleMenu()"><img src="/assets/menu-icon.png" alt="open"></button>
 
-            <div class="order">   
+            <div class="order" data-aos="fade-up">   
                 <a href="#foodmenu" class="order-button">ORDER</a>
             </div>
         </div>
@@ -165,7 +166,14 @@
 </footer>
 
 
-
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  
+  <script>
+    AOS.init({
+      duration: 1000,
+      offset: 100,
+    });
+  </script>
 
 
 <script src="script.js"> </script>
