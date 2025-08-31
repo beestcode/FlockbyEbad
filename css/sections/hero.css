@@ -21,6 +21,7 @@
     top: 0;
     left: 0;
     width: 100%;
+    padding-bottom: 10vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -142,7 +143,7 @@ span.n:hover {
 
 .order {
     position: absolute;
-    bottom: 0;
+    bottom: 7vh;
     right: 0;
     /* margin: 50px; */
     display: flex;
@@ -171,17 +172,158 @@ span.n:hover {
 
 }
 
+@media (max-width: 1440px) {
 
-
-
-@media (max-width: 600px) {
+    .navbar{
+        margin-top: 120px;
+    }
     .navbar h1 {
-        font-size: 15vh;
+        font-size: 40vh;
     }
     span.n{
-        font-size: 20vh;
+        font-size: 50vh;
     }
     .menu a {
-        font-size: 2.5rem;
+        font-size: 5rem;
+    }
+    .order a {
+        font-size: 10vh;
+    }
+}
+
+
+@media (max-width: 1280px) {
+
+    .navbar{
+        margin-top: 100px;
+    }
+    .navbar h1 {
+        font-size: 35vh;
+    }
+    span.n{
+        font-size: 45vh;
+    }
+    .menu a {
+        font-size: 4.5rem;
+    }
+    .order a {
+        font-size: 9vh;
+    }
+    .order{
+        bottom: 3vh;
+    }
+}
+
+@media (max-width: 1200px) {
+    .navbar{
+        margin-top: 90px;
+    }
+    .navbar h1 {
+        font-size: 33vh;
+    }
+    span.n{
+        font-size: 43vh;
+    }
+    .menu a {
+        font-size: 4rem;
+    }
+    .order a {
+        font-size: 8.5vh;
+    }
+}
+
+@media (max-width: 1024px) {
+
+    .hero{
+        background-image: url("/assets/hero-tablet.jpg");
+    }
+    .navbar{
+        margin-top: 120px;
+    }
+    .navbar h1 {
+        font-size: 28vh;
+    }
+    span.n{
+        font-size: 38vh;
+    }
+    .menu a {
+        font-size: 4rem;
+    }
+    .order a {
+        font-size: 8vh;
+    }
+    .order{
+        bottom: 3vh;
+    }
+    .menu-btn{
+        top: 0;
+    }
+}
+
+@media (max-width: 900px) {
+
+    .navbar{
+        margin-top: 120px;
+        padding-top: 60px;
+    }
+    .navbar h1 {
+        font-size: 22vh;
+    }
+    span.n{
+        font-size: 32vh;
+    }
+    .menu a {
+        font-size: 4rem;
+    }
+    .order a {
+        font-size: 8vh;
+    }
+    .order{
+        bottom: 2vh;
+    }
+    .menu-btn{
+        top: 0;
+        right: 20px;
+        padding: 4px 8px;
+    }
+    .menu-btn img {
+        width: 50px;
+        height: 25px;
+    }
+}
+
+@media (max-width: 600px) {
+    .hero{
+        background-image: url("/assets/hero-mobile.jpg");
+    }
+    .navbar{
+        margin-top: 20px;
+        padding-top: 30px;
+    }
+    .navbar h1 {
+        font-size: 25vh;
+    }
+    span.n{
+        font-size: 10vh;
+        display: block;
+    }
+    
+    .menu a {
+        font-size: 4rem;
+    }
+    .order a {
+        font-size: 6vh;
+    }
+    .order{
+        bottom:8vh;
+    }
+    .menu-btn{
+        top: 20px;
+        right: 20px;
+        padding: 4px 8px;
+    }
+    .menu-btn img {
+        width: 40px;
+        height: 20px;
     }
 }

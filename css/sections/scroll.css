@@ -1,0 +1,36 @@
+#movetextsection{
+    /* height: 5vh; */
+    width: 100%;
+    /* background-color: #fff6ea; */
+    /* padding: 8vw 0vw; */
+    position: relative;
+}
+#movingtext{
+    white-space: nowrap;
+    overflow-x: auto;
+}
+#movingtext::-webkit-scrollbar{
+    display: none;
+}
+.con{
+    white-space: nowrap;
+    display:inline-block;
+    animation-name: move;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+#movingtext h1{
+    font-size: 3rem;
+    font-weight: 400;
+    display: inline-block;
+    color:  #ffa617;
+}
+@keyframes move{
+    from{
+        transform: translate(5%);
+    }
+    to{
+        transform: translate(-50%);
+    }
+}

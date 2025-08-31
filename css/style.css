@@ -3,6 +3,7 @@
 
 
 @import url("sections/hero.css");
+@import url("sections/scroll.css");
 
 :root {
     --dark-hover: #2b2214;
@@ -12,6 +13,8 @@
     --orange-hover: #ffa617;
     --dark-color: #2b2214b4;
     --light-orange: #78613d9c;
+    --background: #f0f0f0;
+    
     --font-family: 'Anton', sans-serif;
 }
 
@@ -27,6 +30,9 @@ html,body {
     width: 100%;
     font-size: 16px;
     scroll-behavior: smooth;
+    overflow-x: hidden;
+
+    background-color: var(--background);
 }
 
 a {
