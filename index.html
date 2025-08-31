@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-12">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <title>FlockbyEbad</title>
@@ -13,7 +13,7 @@
             <button class="menu-btn" onclick="toggleMenu()"><img src="/assets/menu-icon.png" alt="open"></button>
 
             <div class="order">   
-                <a href="#menu" class="order-button">ORDER</a>
+                <a href="#foodmenu" class="order-button">ORDER</a>
             </div>
         </div>
     </section>
@@ -23,7 +23,7 @@
     <button class="closemenu" onclick="closeMenu()"><img src="/assets/close-menu.png" alt="close"></button>
 
      <a href="#about">About</a>
-     <a href="#menu">Food Menu</a>
+     <a href="#foodmenu">Food Menu</a>
      <a href="#gallery">Gallery</a>
     <a href="#contact">Contact</a>
     </div>
@@ -62,7 +62,7 @@
             </div>
     </div>
 
-<section class="about" id="about">
+    <section class="about" id="about">
     <div class="about-content">
       <h2>About Us</h2>
         <p>
@@ -74,7 +74,51 @@
     <div class="about-image">
          <img src="assets/about.jpg"     alt="About our restaurant">
     </div>
-</section>
+    </section>
+
+    <section class="food-menu" id="foodmenu">
+    <h2>Our Food Menu</h2>
+    <div class="foodmenu-container">
+
+    <div class="foodmenu-item">
+      <img src="/assets/plane-zinger.jpg" alt="plane zinger">
+      <h3>Plane zinger</h3>
+      <p>Price: <span>$12</span></p>
+      <button onclick="addToCart('plane zinger', 12)">Add to Cart</button>
+    </div>
+
+    <div class="foodmenu-item">
+      <img src="/assets/Burger with chips.jpg" alt="Burger with fries">
+      <h3>Burger with fries</h3>
+      <p>Price: <span>$15</span></p>
+      <button onclick="addToCart('Burger with fries', 15)">Add to Cart</button>
+    </div>
+
+    <div class="foodmenu-item">
+      <img src="/assets/double-zinger.jpg" alt="Double Zinger">
+      <h3>Double Zinger</h3>
+      <p>Price: <span>$12</span></p>
+      <button onclick="addToCart('Double Zinger', 12)">Add to Cart</button>
+    </div>
+
+    <div class="foodmenu-item">
+      <img src="/assets/chocolate-icecream.jpg" alt="Chocolate Icecream">
+      <h3>Chocolate Icecream</h3>
+      <p>Price: <span>$5</span></p>
+      <button onclick="addToCart('Chocolate Icecream', 5)">Add to Cart</button>
+    </div>
+
+  </div>
+
+  <!-- Cart Display -->
+  <div id="cart">
+    <h3>Your Cart</h3>
+    <ul id="cart-items"></ul>
+    <p>Total: $<span id="cart-total">0</span></p>
+    <button onclick="checkout()">Proceed to Checkout</button>
+  </div>
+    </section>
+
 
 
 

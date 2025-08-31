@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Payment Page</title>
+  <link rel="stylesheet" href="css/sections/payment.css">
+</head>
+<body>
+
+  <div class="payment-container">
+    <h2>Checkout Payment</h2>
+    <form id="paymentForm">
+      <label for="name">Full Name</label>
+      <input type="text" id="name" placeholder="Enter your full name" required>
+
+      <label for="card">Card Number</label>
+      <input type="text" id="card" placeholder="1234 5678 9012 3456" required>
+
+      <label for="expiry">Expiry Date</label>
+      <input type="text" id="expiry" placeholder="MM/YY" required>
+
+      <label for="cvv">CVV</label>
+      <input type="password" id="cvv" placeholder="123" required>
+
+      <button type="submit">Pay Now</button>
+    </form>
+  </div>
+
+  <script>
+    document.getElementById("paymentForm").addEventListener("submit", function(e){
+      e.preventDefault();
+      alert("Payment Successful! 🎉 Your order has been placed.");
+      window.location.href = "index.html"; // redirects back to homepage
+    });
+  </script>
+
+</body>
+</html>

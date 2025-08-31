@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+:root {
+    --dark-hover: #2b2214;
+    --white-color: #ffffffb9;
+    --white-hover: #ffffffb9;
+    --orange-color: #ffa617bf;
+    --orange-hover: #ffa617;
+    --dark-color: #2b2214b4;
+    --light-orange: #78613d9c;
+    --background: #f0f0f0;
+    --heading: #504129;
+    
+    --font-family: 'Anton', sans-serif;
+}
+
+
+
+*{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+body {
+      background: var(--background ); 
+      margin: 0;
+      padding: 0;
+}
+
+.payment-container {
+      max-width: 400px;
+      margin: 50px auto;
+      background: #fff;
+      padding: 30px;
+      border-radius: 20px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.34);
+      
+}
+
+
+h2 {
+      font-weight: 400;
+      text-align: center;
+      margin-bottom: 20px;
+}
+
+label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: bold;
+}
+
+input {
+      width: 94%;
+
+      padding: 10px;
+      margin-bottom: 20px;
+      border-radius: 10px;
+      border: 1px solid #ccc;
+}
+input:focus {
+      border-color: var(--orange-color);
+      outline: none;
+      box-shadow: 0 0 5px var(--orange-color);
+}
+
+.payment-container button {
+      width: 100%;
+      padding: 12px;
+      background: #4f4e43d3;
+      
+      color: #ffffff;
+      border: none;
+      border-radius: 15px;
+      font-size: 25px;
+      cursor: pointer;
+      
+}
+
+.payment-container button:hover {
+      background: #19c303cb;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      transition: background 0.3s ease;
+}
