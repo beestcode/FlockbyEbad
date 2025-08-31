@@ -4,6 +4,10 @@
 
 @import url("sections/hero.css");
 @import url("sections/scroll.css");
+@import url("sections/about.css");
+@import url("sections/foodmenu.css");
+@import url("sections/gallery.css");
+@import url("sections/contact.css");
 
 :root {
     --dark-hover: #2b2214;
@@ -14,6 +18,7 @@
     --dark-color: #2b2214b4;
     --light-orange: #78613d9c;
     --background: #f0f0f0;
+    --heading: #504129;
     
     --font-family: 'Anton', sans-serif;
 }

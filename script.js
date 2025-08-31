@@ -9,3 +9,7 @@ function closeMenu() {
     document.getElementById("menu").classList.remove("show");
     document.querySelector(".menu-btn").style.display = "block";
 }
+
+document.querySelectorAll('.menu a').forEach(link => {
+    link.addEventListener('click', closeMenu);
+});
